@@ -1,0 +1,42 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css')
+    script(type="text/javascript" charset="utf-8" src="/javascripts/edge_includes/edge.5.0.1.min.js")
+    style(type='text/css')
+      .edgeLoad-EDGE-513383731 { visibility:hidden; }
+      .edgeLoad-EDGE-7902445 { visibility:hidden; margin-left:-10px; }
+    script(type="text/javascript" src="/javascripts/swipeanimation.js")
+
+
+  body
+    block content
+    div(class="Header")
+      div(class="Header-overlay")
+      img(src="images/header-image.png")
+      div(class="Header-title")
+        div(class="Header-scroll") Scroll
+        div(class="Header-love") Love
+        div(class="apple-store-image")
+        //- img(src="images/apple-store.png")
+        div(class="Header-subtitle") scroll things with your apple watch  
+      div(class="apple-watch-image")
+    div(class="Feature-Section")
+      div(id="Stage" class="EDGE-513383731" onmousemove="myMoveFunction()")
+      div(class="Feature-information")
+        div(class="Feature-title") Swipe
+        div(class="Feature-description") Swipe up or down on the screen to scroll web pages or PDFs.
+    //- div(class="Feature-Section")
+    //-   img(src="images/watch-dial-icon.png")
+    //-   div(class="Feature-information")
+    //-     div(class="Feature-title") Rotate
+    //-     div(class="Feature-description") Rotate the digital crown to scroll up or down.
+    div(class="Feature-Section")
+      div(id="Stage" class="EDGE-7902445 tilt-image-adjust")
+      //- img(src="images/watch-profile-icon.png")
+      div(class="Feature-information")
+        div(class="Feature-title") Tilt
+        div(class="Feature-description tilt-text-adjust") Tilt your watch to control the scroll.
+    
