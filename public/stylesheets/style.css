@@ -148,3 +148,13 @@ img{
   font-family: "Heiti SC";
   margin-left: 5px;
 }
+
+.rotate-hover {
+  transition: all .5s ease;
+}
+
+.rotate-hover:hover {
+  transform: rotate(360deg);
+}
+
+
