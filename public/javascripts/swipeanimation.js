@@ -7,12 +7,12 @@ AdobeEdge.loadComposition('Swipe', 'EDGE-513383731', {
     height: "150px"
 }, {dom: [ ]}, {dom: [ ]});
 
-function myOverFunction() {
-    console.log("I AM HERE");
-  sym.getSymbol("swipe2").play();
+// function myOverFunction() {
+//     console.log("I AM HERE");
+//   sym.getSymbol("swipe2").play();
          
-         sym.getSymbol("arrow2").play();
-}
+//          sym.getSymbol("arrow2").play();
+// }
 
 AdobeEdge.loadComposition('tilt', 'EDGE-7902445', {
     scaleToFit: "none",
@@ -23,7 +23,7 @@ AdobeEdge.loadComposition('tilt', 'EDGE-7902445', {
     height: "150px"
 }, {dom: [ ]}, {dom: [ ]});
 
-AdobeEdge.loadComposition('roatet', 'EDGE-6812215', {
+AdobeEdge.loadComposition('rotate', 'EDGE-1560739', {
     scaleToFit: "none",
     centerStage: "none",
     minW: "0",

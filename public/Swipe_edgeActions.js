@@ -8,7 +8,7 @@
 ***********************/
 (function($, Edge, compId){
 var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonly used Edge classes
-
+ 
    //Edge symbol: 'stage'
    (function(symbolName) {
       
@@ -19,8 +19,10 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
          
          sym.getSymbol("arrow2").play();
          
-
       });
+
+
+
       //Edge binding end
 
       Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 1064, function(sym, e) {

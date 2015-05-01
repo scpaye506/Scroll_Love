@@ -13,7 +13,37 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
    (function(symbolName) {
       
       
+      Symbol.bindElementAction(compId, symbolName, "${rotate}", "mouseover", function(sym, e) {
+         // insert code to be run when the mouse hovers over the object
+         
+         sym.getSymbol("curve2").play();
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${rotate}", "mouseout", function(sym, e) {
+         // insert code to be run when the mouse is moved off the object
+         
+         sym.getSymbol("curve2").playReverse();
+
+      });
+      //Edge binding end
+
+      Symbol.bindSymbolAction(compId, symbolName, "creationComplete", function(sym, e) {
+         
+
+      });
+      //Edge binding end
+
    })("stage");
    //Edge symbol end:'stage'
 
-})(window.jQuery || AdobeEdge.$, AdobeEdge, "EDGE-6812215");
+   //=========================================================
+   
+   //Edge symbol: 'curve'
+   (function(symbolName) {   
+   
+   })("curve");
+   //Edge symbol end:'curve'
+
+})(window.jQuery || AdobeEdge.$, AdobeEdge, "EDGE-1560739");
