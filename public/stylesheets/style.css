@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Sant Joan Despi";
+  src: url(../fonts/SantJoanDespi-Regular.otf)
+  format("truetype");
+}
+
 body {
   margin: 0 auto;
   padding: 0;
