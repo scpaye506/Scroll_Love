@@ -26,7 +26,7 @@ img{
 .Header-title{
   position: absolute;
   left: 16.3%;
-  top: 9%;
+  top: 17%;
   font-size: 6.5vw;
   font-family: "Sant Joan Despi";
   color: #fff;
@@ -34,7 +34,7 @@ img{
 }
 
 .Header-love {
-  margin-top: -5.8%;
+  margin-top: -3%;
 }
 
 
@@ -47,14 +47,15 @@ img{
 }
 
 .Header-subtitle {
-  font-family: Helvetica;
+  font-family: Quicksand;
+  font-weight: bold;
   font-size: 2.26vw;
-  margin-top: 28.5%;
+  margin-top: 23.5%;
 }
 
 .apple-watch-image {
   position: absolute;
-  top: 0;
+  top: 10%;
   right: 14%;
   width: 26%;
   height: 100%;
@@ -67,7 +68,7 @@ img{
 .apple-store-image {
   position: absolute;
   height: 100%;
-  width: 58%;
+  width: 53%;
   background-image: url(../images/apple-store.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -76,20 +77,21 @@ img{
 .Feature-Section {
   position: relative;
   margin: 0 auto;
-  width: 450px;
-  margin-top: 20px;
+  width: 410px;
+  margin-top: 8px;
   border-bottom: 1px solid #E3E3E3;
   padding-bottom: 15px;
 }
 
 .Feature-title {
-  font-family: Helvetica;
+  font-family: Quicksand;
+  font-weight: bold;
   font-size: 28px;
   color: #25B7D3;
 }
 
 .Feature-description {
-  font-family: Helvetica;
+  font-family: Quicksand;
   font-size: 16px;
   color: #454545;
   margin-top: 5px;
@@ -108,5 +110,35 @@ img{
 }
 
 .tilt-text-adjust {
-  width: 175px;
+  width: 206px;
+}
+
+.rotate-image-adjust{
+  margin-left: -26px;
+}
+
+.rotate-text-adjust{
+  width: 198px;
+}
+
+.swipe-text-adjust{
+  width: 260px;
+}
+
+.Footer {
+  height: 44px;
+  background-color: #D8D8D8;
+  text-align: center;
+  color: rgba(69,69,69,0.3);
+  font-size: 16px;
+  line-height: 44px;
+}
+
+.Footer-content{
+  font-family: Quicksand;
+}
+
+.Footer-heart {
+  font-family: "Heiti SC";
+  margin-left: 5px;
 }

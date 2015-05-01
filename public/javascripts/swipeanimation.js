@@ -26,3 +26,12 @@ AdobeEdge.loadComposition('tilt', 'EDGE-7902445', {
     width: "150px",
     height: "150px"
 }, {dom: [ ]}, {dom: [ ]});
+
+AdobeEdge.loadComposition('rotate', 'EDGE-6812215', {
+    scaleToFit: "none",
+    centerStage: "none",
+    minW: "0",
+    maxW: "undefined",
+    width: "150px",
+    height: "150px"
+}, {dom: [ ]}, {dom: [ ]});

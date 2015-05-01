@@ -7,7 +7,8 @@ html
     script(type="text/javascript" charset="utf-8" src="/javascripts/edge_includes/edge.5.0.1.min.js")
     style(type='text/css')
       .edgeLoad-EDGE-513383731 { visibility:hidden; }
-      .edgeLoad-EDGE-7902445 { visibility:hidden; margin-left:-10px; }
+      .edgeLoad-EDGE-7902445 { visibility:hidden;}
+      .edgeLoad-EDGE-6812215 { visibility:hidden;}
     script(type="text/javascript" src="/javascripts/swipeanimation.js")
 
 
@@ -27,16 +28,19 @@ html
       div(id="Stage" class="EDGE-513383731" onmousemove="myMoveFunction()")
       div(class="Feature-information")
         div(class="Feature-title") Swipe
-        div(class="Feature-description") Swipe up or down on the screen to scroll web pages or PDFs.
-    //- div(class="Feature-Section")
-    //-   img(src="images/watch-dial-icon.png")
-    //-   div(class="Feature-information")
-    //-     div(class="Feature-title") Rotate
-    //-     div(class="Feature-description") Rotate the digital crown to scroll up or down.
+        div(class="Feature-description swipe-text-adjust") Swipe up or down on the screen to scroll web pages or PDFs.
+    div(class="Feature-Section")
+      div(id="Stage" class="EDGE-6812215 rotate-image-adjust")
+      //- img(src="images/watch-dial-icon.png")
+      div(class="Feature-information")
+        div(class="Feature-title") Rotate
+        div(class="Feature-description rotate-text-adjust") Rotate the digital crown to scroll up or down.
     div(class="Feature-Section")
       div(id="Stage" class="EDGE-7902445 tilt-image-adjust")
       //- img(src="images/watch-profile-icon.png")
       div(class="Feature-information")
         div(class="Feature-title") Tilt
         div(class="Feature-description tilt-text-adjust") Tilt your watch to control the scroll.
-    
+    div(class="Footer")
+      span(class="Footer-content") Made with scroll
+      span(class="Footer-heart") ♥
