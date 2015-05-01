@@ -30,30 +30,102 @@
                         {
                             id: 'watch',
                             type: 'image',
-                            rect: ['32px', '23px', '57px', '103px', 'auto', 'auto'],
+                            rect: ['52px', '23px', '57px', '103px', 'auto', 'auto'],
                             fill: ["rgba(0,0,0,0)",im+"watch.svg",'0px','0px']
                         },
                         {
-                            id: 'swipe',
-                            type: 'image',
-                            rect: ['10px', '86px', '17px', '6px', 'auto', 'auto'],
-                            opacity: '0',
-                            fill: ["rgba(0,0,0,0)",im+"swipe.svg",'0px','0px']
+                            id: 'Button',
+                            symbolName: 'Button',
+                            type: 'rect',
+                            rect: ['1', '0', '149', '150', 'auto', 'auto']
                         },
                         {
-                            id: 'arrow',
-                            type: 'image',
-                            rect: ['55px', '76px', '11px', '13px', 'auto', 'auto'],
-                            opacity: '0',
-                            fill: ["rgba(0,0,0,0)",im+"arrow.svg",'0px','0px']
+                            id: 'swipe2',
+                            symbolName: 'swipe',
+                            type: 'rect',
+                            rect: ['30', '86', '17', '6', 'auto', 'auto']
+                        },
+                        {
+                            id: 'arrow2',
+                            symbolName: 'arrow',
+                            type: 'rect',
+                            rect: ['75', '76', '11', '13', 'auto', 'auto']
                         }
                     ],
                     style: {
                         '${Stage}': {
                             isStage: true,
-                            rect: [undefined, undefined, '100px', '150px'],
+                            rect: ['null', 'null', '150px', '150px', 'auto', 'auto'],
                             overflow: 'hidden',
                             fill: ["rgba(255,255,255,1)"]
+                        }
+                    }
+                },
+                timeline: {
+                    duration: 1064,
+                    autoPlay: true,
+                    labels: {
+                        "Label 1": 1064
+                    },
+                    data: [
+                            [ "eid139", "trigger", 0, function executeSymbolFunction(e, data) { this._executeSymbolAction(e, data); }, ['play', '${Button}', [] ] ],
+                            [ "eid171", "trigger", 1000, function executeSymbolFunction(e, data) { this._executeSymbolAction(e, data); }, ['stop', '${Button}', [] ] ]
+                    ]
+                }
+            },
+            "Button": {
+                version: "5.0.1",
+                minimumCompatibleVersion: "5.0.0",
+                build: "5.0.1.386",
+                scaleToFit: "none",
+                centerStage: "none",
+                resizeInstances: false,
+                content: {
+                    dom: [
+                        {
+                            rect: ['0px', '0px', '149px', '150px', 'auto', 'auto'],
+                            opacity: '0',
+                            id: 'BUTTON',
+                            stroke: [0, 'rgba(0,0,0,1)', 'none'],
+                            type: 'rect',
+                            fill: ['rgba(192,192,192,1)']
+                        }
+                    ],
+                    style: {
+                        '${symbolSelector}': {
+                            rect: [null, null, '149px', '150px']
+                        }
+                    }
+                },
+                timeline: {
+                    duration: 0,
+                    autoPlay: true,
+                    data: [
+
+                    ]
+                }
+            },
+            "swipe": {
+                version: "5.0.1",
+                minimumCompatibleVersion: "5.0.0",
+                build: "5.0.1.386",
+                scaleToFit: "none",
+                centerStage: "none",
+                resizeInstances: false,
+                content: {
+                    dom: [
+                        {
+                            rect: ['0px', '0px', '17px', '6px', 'auto', 'auto'],
+                            id: 'swipe',
+                            opacity: '0',
+                            type: 'image',
+                            fill: ['rgba(0,0,0,0)', 'images/swipe.svg', '0px', '0px']
+                        }
+                    ],
+                    style: {
+                        '${symbolSelector}': {
+                            isStage: 'true',
+                            rect: [undefined, undefined, '17px', '6px']
                         }
                     }
                 },
@@ -62,29 +134,19 @@
                     autoPlay: true,
                     data: [
                         [
-                            "eid12",
-                            "opacity",
-                            500,
-                            500,
+                            "eid62",
+                            "left",
+                            1000,
+                            0,
                             "linear",
-                            "${arrow}",
-                            '0.000000',
-                            '1'
-                        ],
-                        [
-                            "eid16",
-                            "top",
-                            500,
-                            500,
-                            "linear",
-                            "${arrow}",
-                            '76px',
-                            '56px'
+                            "${swipe}",
+                            '0px',
+                            '0px'
                         ],
                         [
                             "eid5",
                             "-webkit-transform-origin",
-                            0,
+                            64,
                             0,
                             "linear",
                             "${swipe}",
@@ -93,9 +155,9 @@
                             {valueTemplate: '@@0@@% @@1@@%'}
                         ],
                         [
-                            "eid17",
+                            "eid442",
                             "-moz-transform-origin",
-                            0,
+                            64,
                             0,
                             "linear",
                             "${swipe}",
@@ -104,9 +166,9 @@
                             {valueTemplate: '@@0@@% @@1@@%'}
                         ],
                         [
-                            "eid18",
+                            "eid443",
                             "-ms-transform-origin",
-                            0,
+                            64,
                             0,
                             "linear",
                             "${swipe}",
@@ -115,9 +177,9 @@
                             {valueTemplate: '@@0@@% @@1@@%'}
                         ],
                         [
-                            "eid19",
+                            "eid444",
                             "msTransformOrigin",
-                            0,
+                            64,
                             0,
                             "linear",
                             "${swipe}",
@@ -126,9 +188,9 @@
                             {valueTemplate: '@@0@@% @@1@@%'}
                         ],
                         [
-                            "eid20",
+                            "eid445",
                             "-o-transform-origin",
-                            0,
+                            64,
                             0,
                             "linear",
                             "${swipe}",
@@ -137,9 +199,9 @@
                             {valueTemplate: '@@0@@% @@1@@%'}
                         ],
                         [
-                            "eid21",
+                            "eid446",
                             "transform-origin",
-                            0,
+                            64,
                             0,
                             "linear",
                             "${swipe}",
@@ -150,7 +212,7 @@
                         [
                             "eid4",
                             "-webkit-transform-origin",
-                            500,
+                            564,
                             0,
                             "linear",
                             "${swipe}",
@@ -159,9 +221,9 @@
                             {valueTemplate: '@@0@@% @@1@@%'}
                         ],
                         [
-                            "eid22",
+                            "eid447",
                             "-moz-transform-origin",
-                            500,
+                            564,
                             0,
                             "linear",
                             "${swipe}",
@@ -170,9 +232,9 @@
                             {valueTemplate: '@@0@@% @@1@@%'}
                         ],
                         [
-                            "eid23",
+                            "eid448",
                             "-ms-transform-origin",
-                            500,
+                            564,
                             0,
                             "linear",
                             "${swipe}",
@@ -181,9 +243,9 @@
                             {valueTemplate: '@@0@@% @@1@@%'}
                         ],
                         [
-                            "eid24",
+                            "eid449",
                             "msTransformOrigin",
-                            500,
+                            564,
                             0,
                             "linear",
                             "${swipe}",
@@ -192,9 +254,9 @@
                             {valueTemplate: '@@0@@% @@1@@%'}
                         ],
                         [
-                            "eid25",
+                            "eid450",
                             "-o-transform-origin",
-                            500,
+                            564,
                             0,
                             "linear",
                             "${swipe}",
@@ -203,78 +265,12 @@
                             {valueTemplate: '@@0@@% @@1@@%'}
                         ],
                         [
-                            "eid26",
+                            "eid451",
                             "transform-origin",
-                            500,
+                            564,
                             0,
                             "linear",
                             "${swipe}",
-                            [50,50],
-                            [50,50],
-                            {valueTemplate: '@@0@@% @@1@@%'}
-                        ],
-                        [
-                            "eid13",
-                            "-webkit-transform-origin",
-                            500,
-                            0,
-                            "linear",
-                            "${arrow}",
-                            [50,50],
-                            [50,50],
-                            {valueTemplate: '@@0@@% @@1@@%'}
-                        ],
-                        [
-                            "eid27",
-                            "-moz-transform-origin",
-                            500,
-                            0,
-                            "linear",
-                            "${arrow}",
-                            [50,50],
-                            [50,50],
-                            {valueTemplate: '@@0@@% @@1@@%'}
-                        ],
-                        [
-                            "eid28",
-                            "-ms-transform-origin",
-                            500,
-                            0,
-                            "linear",
-                            "${arrow}",
-                            [50,50],
-                            [50,50],
-                            {valueTemplate: '@@0@@% @@1@@%'}
-                        ],
-                        [
-                            "eid29",
-                            "msTransformOrigin",
-                            500,
-                            0,
-                            "linear",
-                            "${arrow}",
-                            [50,50],
-                            [50,50],
-                            {valueTemplate: '@@0@@% @@1@@%'}
-                        ],
-                        [
-                            "eid30",
-                            "-o-transform-origin",
-                            500,
-                            0,
-                            "linear",
-                            "${arrow}",
-                            [50,50],
-                            [50,50],
-                            {valueTemplate: '@@0@@% @@1@@%'}
-                        ],
-                        [
-                            "eid31",
-                            "transform-origin",
-                            500,
-                            0,
-                            "linear",
-                            "${arrow}",
                             [50,50],
                             [50,50],
                             {valueTemplate: '@@0@@% @@1@@%'}
@@ -282,17 +278,17 @@
                         [
                             "eid9",
                             "top",
-                            0,
+                            64,
                             500,
                             "linear",
                             "${swipe}",
-                            '86px',
-                            '48px'
+                            '0px',
+                            '-38px'
                         ],
                         [
                             "eid8",
                             "height",
-                            0,
+                            64,
                             500,
                             "linear",
                             "${swipe}",
@@ -302,12 +298,139 @@
                         [
                             "eid3",
                             "opacity",
-                            0,
+                            64,
                             500,
                             "linear",
                             "${swipe}",
                             '0',
                             '1'
+                        ]
+                    ]
+                }
+            },
+            "arrow": {
+                version: "5.0.1",
+                minimumCompatibleVersion: "5.0.0",
+                build: "5.0.1.386",
+                scaleToFit: "none",
+                centerStage: "none",
+                resizeInstances: false,
+                content: {
+                    dom: [
+                        {
+                            rect: ['0px', '0px', '11px', '13px', 'auto', 'auto'],
+                            id: 'arrow',
+                            opacity: '0',
+                            type: 'image',
+                            fill: ['rgba(0,0,0,0)', 'images/arrow.svg', '0px', '0px']
+                        }
+                    ],
+                    style: {
+                        '${symbolSelector}': {
+                            isStage: 'true',
+                            rect: [undefined, undefined, '11px', '13px']
+                        }
+                    }
+                },
+                timeline: {
+                    duration: 1064,
+                    autoPlay: true,
+                    data: [
+                        [
+                            "eid13",
+                            "-webkit-transform-origin",
+                            564,
+                            0,
+                            "linear",
+                            "${arrow}",
+                            [50,50],
+                            [50,50],
+                            {valueTemplate: '@@0@@% @@1@@%'}
+                        ],
+                        [
+                            "eid452",
+                            "-moz-transform-origin",
+                            564,
+                            0,
+                            "linear",
+                            "${arrow}",
+                            [50,50],
+                            [50,50],
+                            {valueTemplate: '@@0@@% @@1@@%'}
+                        ],
+                        [
+                            "eid453",
+                            "-ms-transform-origin",
+                            564,
+                            0,
+                            "linear",
+                            "${arrow}",
+                            [50,50],
+                            [50,50],
+                            {valueTemplate: '@@0@@% @@1@@%'}
+                        ],
+                        [
+                            "eid454",
+                            "msTransformOrigin",
+                            564,
+                            0,
+                            "linear",
+                            "${arrow}",
+                            [50,50],
+                            [50,50],
+                            {valueTemplate: '@@0@@% @@1@@%'}
+                        ],
+                        [
+                            "eid455",
+                            "-o-transform-origin",
+                            564,
+                            0,
+                            "linear",
+                            "${arrow}",
+                            [50,50],
+                            [50,50],
+                            {valueTemplate: '@@0@@% @@1@@%'}
+                        ],
+                        [
+                            "eid456",
+                            "transform-origin",
+                            564,
+                            0,
+                            "linear",
+                            "${arrow}",
+                            [50,50],
+                            [50,50],
+                            {valueTemplate: '@@0@@% @@1@@%'}
+                        ],
+                        [
+                            "eid63",
+                            "left",
+                            1064,
+                            0,
+                            "linear",
+                            "${arrow}",
+                            '0px',
+                            '0px'
+                        ],
+                        [
+                            "eid12",
+                            "opacity",
+                            564,
+                            500,
+                            "linear",
+                            "${arrow}",
+                            '0.000000',
+                            '1'
+                        ],
+                        [
+                            "eid16",
+                            "top",
+                            564,
+                            500,
+                            "linear",
+                            "${arrow}",
+                            '0px',
+                            '-20px'
                         ]
                     ]
                 }

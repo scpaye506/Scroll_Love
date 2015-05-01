@@ -131,6 +131,10 @@ img{
   width: 260px;
 }
 
+.swipe-image-adjust {
+  margin-left: -22px;
+}
+
 .Footer {
   height: 44px;
   background-color: #D8D8D8;
@@ -149,12 +153,5 @@ img{
   margin-left: 5px;
 }
 
-.rotate-hover {
-  transition: all .5s ease;
-}
-
-.rotate-hover:hover {
-  transform: rotate(360deg);
-}
 
 

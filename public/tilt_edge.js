@@ -28,19 +28,50 @@
                 content: {
                     dom: [
                         {
-                            id: 'tilt',
-                            type: 'image',
-                            rect: ['32px', '31px', '85px', '88px', 'auto', 'auto'],
-                            fill: ["rgba(0,0,0,0)",im+"tilt.svg",'0px','0px'],
-                            transform: [[],['-12']]
+                            id: 'tilt2',
+                            symbolName: 'tilt',
+                            type: 'rect',
+                            rect: ['24', '23', '101', '104', 'auto', 'auto']
                         }
                     ],
                     style: {
                         '${Stage}': {
                             isStage: true,
-                            rect: [undefined, undefined, '150px', '150px'],
+                            rect: ['null', 'null', '150px', '150px', 'auto', 'auto'],
                             overflow: 'hidden',
                             fill: ["rgba(255,255,255,1)"]
+                        }
+                    }
+                },
+                timeline: {
+                    duration: 1000,
+                    autoPlay: true,
+                    data: [
+
+                    ]
+                }
+            },
+            "tilt": {
+                version: "5.0.1",
+                minimumCompatibleVersion: "5.0.0",
+                build: "5.0.1.386",
+                scaleToFit: "none",
+                centerStage: "none",
+                resizeInstances: false,
+                content: {
+                    dom: [
+                        {
+                            rect: ['8px', '8px', '85px', '88px', 'auto', 'auto'],
+                            id: 'tilt',
+                            transform: [[], ['-12']],
+                            type: 'image',
+                            fill: ['rgba(0,0,0,0)', 'images/tilt.svg', '0px', '0px']
+                        }
+                    ],
+                    style: {
+                        '${symbolSelector}': {
+                            isStage: 'true',
+                            rect: [undefined, undefined, '101px', '104px']
                         }
                     }
                 },

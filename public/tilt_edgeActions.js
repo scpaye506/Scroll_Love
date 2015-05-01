@@ -13,7 +13,31 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
    (function(symbolName) {
       
       
+      Symbol.bindSymbolAction(compId, symbolName, "creationComplete", function(sym, e) {
+         // insert code to be run when the symbol is created here
+         sym.getSymbol("tilt2").stop();
+         
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${tilt2}", "mouseover", function(sym, e) {
+         // insert code to be run when the mouse hovers over the object
+         sym.getSymbol("tilt2").play();
+         
+
+      });
+      //Edge binding end
+
    })("stage");
    //Edge symbol end:'stage'
+
+   //=========================================================
+   
+   //Edge symbol: 'tilt'
+   (function(symbolName) {   
+   
+   })("tilt");
+   //Edge symbol end:'tilt'
 
 })(window.jQuery || AdobeEdge.$, AdobeEdge, "EDGE-7902445");
